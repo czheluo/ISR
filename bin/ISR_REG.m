@@ -572,11 +572,12 @@ nplm=size(plm,1);
 for i=1:n1
  new_tr(i,:)=strrep(Tr(i,:),'X',' ');
 end
-lm=str2num(new_tr);marker=label(lm);chrgl=chr(lm);poslm=pos(lm);
-Marker=marker;chromosome=chrgl;position=poslm;p_f=pr;beta=b(2:end);sebeta=SEb;r2=r2lz;
+lm=str2num(new_tr);markers=marker(lm);chrgl=chr(lm);poslm=pos(lm);
+Marker=markers;chromosome=chrgl;position=poslm;p_f=pr;beta=b(2:end);sebeta=SEb;r2=r2lz;
 opt_result=table(Marker,chromosome,position,f,p_f,beta,sebeta,r2);
-SNP=label;Chromosome=chr;Position=pos;Ft=ft;P_F=plm;Beta=effect;SEbeta=seblm;R2=r2lm;
+SNP=marker;Chromosome=chr;Position=pos;Ft=ft;P_F=plm;Beta=effect;SEbeta=seblm;R2=r2lm;
 all_result=table(SNP,Chromosome,Position,Ft,P_F,Beta,SEbeta,R2);
+save('ISR_result.mat','all_result','opt_result','chr','pos','plm','-v7.3');
 lmbx=x(:,lm);
 if gr==1
 xlswrite(genotype,lmbx,1);

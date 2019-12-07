@@ -50,7 +50,7 @@ line(e,e,'Color','k','LineStyle','-','LineWidth',2.5)
 set(gca,'FontName','Times New Roman','FontSize',16);
 xlabel('Expected -log_{10}(\itP)','FontName','Times New Roman','FontSize',16);
 ylabel('Observed -log_{10}(\itP)','FontName','Times New Roman','FontSize',16);
-legend('MLLM')
+legend('ISR')
 %logQuantiles=-log10(e);
 %N=length(p);
 %n1 = length(o);

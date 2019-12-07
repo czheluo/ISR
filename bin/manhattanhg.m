@@ -57,7 +57,7 @@ for j=1:1:(phe-2)
       end
       % Add the chromosome number.
       %for il=1:nchr
-      text(xg(c),-0.2 * (max(-log10(plm)) - min(-log10(plm))),num2str(c),...
+      text(xg(c),-0.08* (max(-log10(plm)) - min(-log10(plm))),num2str(c),...
           'Color',cl(c,:),'FontSize',9,'HorizontalAlignment','center',...
           'VerticalAlignment','bottom','FontName','Times New Roman',...
           'FontWeight','bold','FontSize',14);
@@ -69,7 +69,10 @@ for j=1:1:(phe-2)
   set(gca,'TickDir','in');
   set(gca,'TickLength',[0.005,0.1]);
   set(gca,'FontName','Times New Roman', 'FontWeight','bold','FontSize',14);
-  xlabel('Chromosome');ylabel('-log_{10}(\itP)');
+  %xlabel('Chromosome');
+  ylabel('-log_{10}(\itP)');
+  xlh = xlabel('Chromosome');
+  xlh.Position(2) = xlh.Position(2) - 1;
   hold on;
   %add the signifigant line
   ylm=-log10(0.05/nsnp);yl=[ylm,ylm];
