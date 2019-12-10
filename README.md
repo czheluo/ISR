@@ -79,17 +79,17 @@ chr1_4680899	1	4680899	3.587 	6.2E-02	-0.1385 	0.0731 	0.0069
 </p>
 <p align="center">
 <a href="/Fig/manhattan.bmp">
-<img src="Fig/qq.bmp" height="300px" width="900px">
+<img src="Fig/qq.bmp" height="300px" width="500px">
 </a>
 </p>
 <p align="center">
 <a href="/Fig/manhattan.bmp">
-<img src="Fig/manhattan.pca.bmp" height="300px" width="900px">
+<img src="Fig/manhattan.pca.bmp" height="300px" width="500px">
 </a>
 </p>
 <p align="center">
 <a href="/Fig/manhattan.bmp">
-<img src="Fig/qq.pca.bmp" height="300px" width="900px">
+<img src="Fig/qq.pca.bmp" height="300px" width="500px">
 </a>
 </p>
 
