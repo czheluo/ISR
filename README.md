@@ -74,7 +74,7 @@ chr1_4680899	1	4680899	3.587 	6.2E-02	-0.1385 	0.0731 	0.0069
 ### dataViz in Manhattan and QQ plot
 <p align="center">
 <a href="/Fig/manhattan.bmp">
-<img src="Fig/manhattan.bmp" height="938" width="2500">
+<img src="Fig/manhattan.bmp" width="80%">
 </a>
 </p>
 <p align="center">
