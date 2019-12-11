@@ -32,7 +32,7 @@
 ....
 
 # Running ISR 
->Compile in linux enviroment. make sure in add alias in path like  "alias matlab='/mnt/d/linux/MATLAB2016b/bin/matlab -nodesktop -nosplash -singleCompThread -logfile `date +%Y_%m_%d-%H_%M_%S`.log -r'" before Running. A Small GWAS Example Dataset Running as following:
+>Compile in linux enviroment. make sure you add alias in path like  "alias matlab='/mnt/d/linux/MATLAB2016b/bin/matlab -nodesktop -nosplash -singleCompThread -logfile `date +%Y_%m_%d-%H_%M_%S`.log -r'" before Running. A Small GWAS Example Dataset Running as following:
 ```linux
 $ matlab "ISR_linux('phefile','../data/pop.fam','genofile','../data/pop.traw','sample',87,'nSNP',28228,'ntrait',1,'ncov',5),exit;
 $ Basic Usage
@@ -60,7 +60,8 @@ memreq         = number, the memory in bytes required to run a single job
 ## Output Files
 > There will be two output files, both inside an output folder in the current directory. The pre-fix.log.txt file contains some detailed information about the running parameters and computation time. In addition, prefix.log.txt contains PVE estimate and its standard error in the null linear mixed model.
 
-The ISR.outresult.txt contains the results. An example file with a few SNPs is shown below:
+>The ISR.outresult.txt contains the results. An example file with a few SNPs is shown below:
+
 SNP	Chromosome	Position	Ft	P_F	Beta	SEbeta	R2
 chr1_3913855	1	3913855	0.046 	8.3E-01	0.0111 	0.0517 	0.0001 
 chr1_3913895	1	3913895	1.737 	1.9E-01	0.1237 	0.0939 	0.0034 
