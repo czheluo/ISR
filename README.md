@@ -24,7 +24,8 @@
 ### Phenotype File
 ><span style="font-family: Times New Roman; font-size:1em;"><font size="4"> <div align="justify"> Reformat the phenotype files in the same order of [.fam](https://www.cog-genomics.org/plink/1.9/formats#fam) (PLINK sample information file). The columns represented as following, included the six columns and both the phenotype value. Missing phenotype information is denoted as NA. The number of rows should be equal to the number of individuals in the genotype file. </div></font> </span>
 
-<span style="font-family: Times New Roman; font-size:1em;"><font size="4"> <div align="justify"> 1. Family ID ('FID')
+<span style="font-family: Times New Roman; font-size:1em;"><font size="4"> <div align="justify">
+1. Family ID ('FID')
 2. Within-family ID ('IID'; cannot be '0')
 3. Within-family ID of father ('0' if father isn't in dataset)
 4. Within-family ID of mother ('0' if mother isn't in dataset)
@@ -101,7 +102,7 @@ sgv = number, the bonferroni correction for association tests results.
 </a>
 </p>
 ### association region plot
-> 
+
 </p>
 <p align="center">
 <a href="/Fig/1212.svg">
