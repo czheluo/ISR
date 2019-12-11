@@ -62,14 +62,15 @@ memreq         = number, the memory in bytes required to run a single job
 
 >The ISR.outresult.txt contains the results. An example file with a few SNPs is shown below:
 
-SNP	Chromosome	Position	Ft	P_F	Beta	SEbeta	R2
-chr1_3913855	1	3913855	0.046 	8.3E-01	0.0111 	0.0517 	0.0001 
-chr1_3913895	1	3913895	1.737 	1.9E-01	0.1237 	0.0939 	0.0034 
-chr1_4680660	1	4680660	0.161 	6.9E-01	-0.0324 	0.0807 	0.0003 
-chr1_4680664	1	4680664	0.572 	4.5E-01	-0.0841 	0.1113 	0.0011 
-chr1_4680724	1	4680724	0.807 	3.7E-01	-0.0697 	0.0776 	0.0016 
-chr1_4680752	1	4680752	1.333 	2.5E-01	-0.1330 	0.1151 	0.0026 
-chr1_4680899	1	4680899	3.587 	6.2E-02	-0.1385 	0.0731 	0.0069 
+1. SNP	Chromosome	Position	Ft	P_F	Beta	SEbeta	R2
+2. chr1_3913855	1	3913855	0.046 	8.3E-01	0.0111 	0.0517 	0.0001 
+3. chr1_3913895	1	3913895	1.737 	1.9E-01	0.1237 	0.0939 	0.0034 
+4. chr1_4680660	1	4680660	0.161 	6.9E-01	-0.0324 	0.0807 	0.0003 
+5. chr1_4680664	1	4680664	0.572 	4.5E-01	-0.0841 	0.1113 	0.0011 
+6. chr1_4680724	1	4680724	0.807 	3.7E-01	-0.0697 	0.0776 	0.0016 
+7. chr1_4680752	1	4680752	1.333 	2.5E-01	-0.1330 	0.1151 	0.0026 
+8. chr1_4680899	1	4680899	3.587 	6.2E-02	-0.1385 	0.0731 	0.0069 
+
 >The eight columns are: snp ids, chromosome, base pair positions on the chromosome, F value and p value for F value, beta estimates, standard errors for beta, estimates each marker PVE. And ISR.opt.outresult.txt  only contain the significant marker after bonferroni correction in 5% default.
 
 ### dataViz in Manhattan and QQ plot
