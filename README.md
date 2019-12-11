@@ -81,7 +81,7 @@ memreq         = number, the memory in bytes required to run a single job
 </p>
 <p align="center">
 <a href="/Fig/manhattan.bmp">
-<img src="Fig/qq.bmp" width="100%">
+<img src="Fig/qq.bmp" width="80%">
 </a>
 </p>
 <p align="center">
@@ -91,7 +91,7 @@ memreq         = number, the memory in bytes required to run a single job
 </p>
 <p align="center">
 <a href="/Fig/manhattan.bmp">
-<img src="Fig/qq.pca.bmp" width="100%">
+<img src="Fig/qq.pca.bmp" width="80%">
 </a>
 </p>
 
