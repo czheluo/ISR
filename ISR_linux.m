@@ -1,7 +1,11 @@
 function []=ISR_linux(varargin)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ISR methods for GWAS @AUTHOR MENG LUO  %
+% contact: czheluo@gmail.com             %  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %seting the env path 
 % alias matlab='/mnt/d/linux/MATLAB2016b/bin/matlab -nodesktop -nosplash -singleCompThread -logfile `date +%Y_%m_%d-%H_%M_%S`.log -r'
-addpath([pwd,'/src/']);
+addpath([pwd,'/bin/']);
 phefile = ft_getopt(varargin, 'phefile', 'phe.fam');
 genofile = ft_getopt(varargin, 'genofile', 'pop.traw');
 outfile = ft_getopt(varargin, 'outfile', 'pop.traw.mat');
