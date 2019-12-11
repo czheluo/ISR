@@ -1,9 +1,11 @@
-function []=ISR_linux(varargin)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ISR methods for GWAS @AUTHOR MENG LUO  %
-% contact: czheluo@gmail.com             %  
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-addpath([pwd,'/bin/']);
+function []=ISR(varargin)
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % ISR methods for GWAS @AUTHOR MENG LUO  %
+    % contact: czheluo@gmail.com             %  
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %seting the env path 
+    % alias matlab='/mnt/d/linux/MATLAB2016b/bin/matlab -nodesktop -nosplash -singleCompThread -logfile `date +%Y_%m_%d-%H_%M_%S`.log -r'
+    addpath([pwd,'/src/']);
     phefile = ft_getopt(varargin, 'phefile', 'phe.fam');
     genofile = ft_getopt(varargin, 'genofile', 'pop.traw');
     outfile = ft_getopt(varargin, 'outfile', 'pop.traw.mat');
@@ -13,6 +15,8 @@ addpath([pwd,'/bin/']);
     chr = ft_getopt(varargin, 'nchr', []);
     opt_outresult = ft_getopt(varargin, 'opt_outresult', 'ISR.opt.outresult.txt');
     all_outresult = ft_getopt(varargin, 'all_outresult', 'ISR.outresult.txt');
+    vcf = ft_getopt(varargin, 'vcf', []);
+    bed = ft_getopt(varargin, 'bed', []);
     ncov = ft_getopt(varargin, 'ncov', []);
     IM = ft_getopt(varargin, 'IM', 1);
     sgv = ft_getopt(varargin, 'sgv', 0.05); % default bonferroni correction
@@ -31,7 +35,16 @@ addpath([pwd,'/bin/']);
     %end
     %maxNumCompThreads=1;
     % write a shell script for ISR getopt....
-    traw2mat('../../pop.fam','../../poptraw.traw','popnew.mat',175,407045,3)
+    if ~isempty(vcf)
+        system(['plink ',' --vcf ',vcf,' --recode A-transpose --out pop']);
+        traw2mat(phefile,genofile,outfile,sample,nSNP,ntrait,IM);
+    elseif ~isempty(bed)
+        system(['plink ',' --bfile ',bed,' --recode A-transpose --out pop ']);
+        traw2mat(phefile,genofile,outfile,sample,nSNP,ntrait,IM);
+    else
+        traw2mat(phefile,genofile,outfile,sample,nSNP,ntrait,IM);
+    end
+    %traw2mat('../../pop.fam','../../poptraw.traw','popnew.mat',175,407045,3)
     load(outfile);
     Y=y;
     [~,p1]=size(Y);
@@ -134,5 +147,4 @@ addpath([pwd,'/bin/']);
             %clf;
         end
     end
-    end
-    
+end    
