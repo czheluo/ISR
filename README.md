@@ -5,7 +5,7 @@
 #### Compared result
 <div align="center"><a href=""><img src="Fig/HUMANPOWER.png" width="80%" alt="pca"></a></div>
 
-> So this GWAS schematic based on our proposed statistical method, iterative Screen Regression (ISR), which construct firstly new model selection criteria RIC (Regression Information Criteria) and then using special variable selection procedure to maximize the RIC, in order to achieve the optimal dissecting of genetic effects of complex traits. We mainly applied to detect epistasis and additive effects in genome-wide association analysis (GWAS) and genomic selection (GS).
+> So this GWAS schematic based on our proposed statistical method, iterative Screen Regression (ISR), which construct firstly new model selection criteria RIC (Regression Information Criteria) and then using special variable selection procedure to maximize the RIC, in order to achieve the optimal dissecting of genetic effects of complex traits. We mainly applied to detect epistasis and additive effects in [genome-wide association analysis](http://mengluonet.com/blog/2018/05/12/An-Efficient-Iterative-Screen-Regression-model-For-Genome-wide-Association-Study-in-Structured-Populations/) (GWAS) and [genomic selection](http://mengluonet.com/blog/2018/05/22/Genetic-Prediction-of-Complex-Traits-with-Iterative-Screen-Regression-Models/) (GS).
 
 # Installation
 >Only to need install [MATLAB](https://www.mathworks.com/products/matlab.html) software which the code can compile in linux and window environment.
