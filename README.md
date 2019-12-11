@@ -88,7 +88,7 @@ sgv = number, the bonferroni correction for association tests results.
 </p>
 <p align="center">
 <a href="/Fig/manhattan.bmp">
-<img src="Fig/qq.bmp" width="80%">
+<img src="Fig/qq.bmp" width="60%">
 </a>
 </p>
 <p align="center">
@@ -98,7 +98,7 @@ sgv = number, the bonferroni correction for association tests results.
 </p>
 <p align="center">
 <a href="/Fig/manhattan.bmp">
-<img src="Fig/qq.pca.bmp" width="80%">
+<img src="Fig/qq.pca.bmp" width="60%">
 </a>
 </p>
 ### association region plot
