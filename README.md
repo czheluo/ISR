@@ -12,8 +12,17 @@
 </a>
 </p>
 
+#### Compared result For genomic selection model 
 
-> So this GWAS schematic based on our proposed statistical method, iterative Screen Regression (ISR), which construct firstly new model selection criteria RIC (Regression Information Criteria) and then using special variable selection procedure to maximize the RIC, in order to achieve the optimal dissecting of genetic effects of complex traits. We mainly applied to detect epistasis and additive effects in [genome-wide association analysis](http://mengluonet.com/blog/2018/05/12/An-Efficient-Iterative-Screen-Regression-model-For-Genome-wide-Association-Study-in-Structured-Populations/) (GWAS) and [genomic selection](http://mengluonet.com/blog/2018/05/22/Genetic-Prediction-of-Complex-Traits-with-Iterative-Screen-Regression-Models/) (GS).
+</p>
+<p align="center">
+<a href="/Fig/4.4.png">
+<img src="Fig/4.4.png" width="80%">
+</a>
+</p>
+
+
+> So this GWAS schematic based on our proposed statistical method, iterative Screen Regression (ISR), which construct firstly new model selection criteria RIC (Regression Information Criteria) and then using special variable selection procedure to maximize the RIC, in order to achieve the optimal dissecting of genetic effects of complex traits. We mainly applied to detect epistasis and additive effects in [genome-wide association analysis](http://mengluonet.com/blog/2018/05/12/An-Efficient-Iterative-Screen-Regression-model-For-Genome-wide-Association-Study-in-Structured-Populations/) (GWAS) and [genomic selection](http://mengluonet.com/blog/2018/05/22/Genetic-Prediction-of-Complex-Traits-with-Iterative-Screen-Regression-Models/) (GS). The detected power show  that our method perform well than [MLMM](https://github.com/Gregor-Mendel-Institute/mlmm), [FarmCPU](https://github.com/xiaolei-lab/rMVP)，[FaSTLMM](https://www.microsoft.com/en-us/research/project/fastlmm/),[PLINK_fisher](https://www.cog-genomics.org/plink/),[GEMMA](https://github.com/genetics-statistics/GEMMA) and [CMLM](https://github.com/jiabowang/GAPIT3) models, also, for estimating PVE. We also using ISR model for genome prediction, comparing with [DPR](http://xzlab.org/software.html), [BSLMM](http://xzlab.org/software.html),[rrBLUP](https://cran.r-project.org/web/packages/rrBLUP/index.html),[Bayes A,B,C AND LASSO](https://github.com/gdlc/BGLR-R).
 
 # Installation
 >Only to need install [MATLAB](https://www.mathworks.com/products/matlab.html) software which the code can compile in linux and window environment.
