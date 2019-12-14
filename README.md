@@ -100,6 +100,16 @@ mdl = number, 1 for linear model and 2 or 3 for nolinear model ; input('Using Mo
 
 > <span style="font-family: Times New Roman; font-size:1em;"><font size="4"> <div align="justify"> The eight columns are: SNP ids, chromosome, base-pair positions on the chromosome, F value and p-value for F value, beta estimates, standard errors for beta, estimates each marker PVE. And ISR.opt.outresult.txt  only contain the significant marker after Bonferroni correction in 5% default.</div></font> </span>
 
+## [CFW genome-wide association study](https://www.nature.com/articles/ng.3609)
+
+</p>
+<p align="center">
+<a href="/Fig/2.22.png">
+<img src="Fig/2.22.png" width="80%">
+</a>
+</p>
+
+
 ### dataViz in Manhattan and QQ plot
 <p align="center">
 <a href="/Fig/manhattan.bmp">
@@ -136,15 +146,6 @@ mdl = number, 1 for linear model and 2 or 3 for nolinear model ; input('Using Mo
 <p align="center">
 <a href="/Fig/epistasis.bmp">
 <img src="Fig/epistasis.bmp" width="80%">
-</a>
-</p>
-
-## [CFW genome-wide association study](https://www.nature.com/articles/ng.3609)
-
-</p>
-<p align="center">
-<a href="/Fig/2.22.png">
-<img src="Fig/2.22.png" width="80%">
 </a>
 </p>
 
