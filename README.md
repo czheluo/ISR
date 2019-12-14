@@ -43,6 +43,8 @@
 $ matlab "ISR_linux('phefile','../data/pop.fam','genofile','../data/pop.traw','sample',87,'nSNP',28228,'ntrait',1,'ncov',5),exit;
 %% add five PCs as covariates
 $ matlab "ISR_linux('phefile','../data/pop.fam','genofile','../data/pop.traw','sample',87,'nSNP',28228,'ntrait',1,'ncov',5),exit;
+%% nolinear model and epistasis 
+$ matlab "ISR_linux('phefile','../data/pop.fam','genofile','../data/pop.traw','sample',87,'nSNP',28228,'ntrait',1,'ncov',5,'mdl',2),exit;
 $ Basic Usage
 Options :
 phefile = string, can be any of file format split with "\t"(default = 'phe.fam')
@@ -59,7 +61,7 @@ bed = string, the bed file name.
 ncov = number, the number of PCs covariates.
 IM = impute missing genotype with mean and median value, '1' was the default method means and others was median.
 sgv = number, the bonferroni correction for association tests results.
-
+mdl = number, 1 for linear model and 2 or 3 for nolinear model ; input('Using Model II(without square term 2) or Model III(with square term 3) 2/3? ').
 ```
 
 ## Output Files
@@ -110,3 +112,14 @@ sgv = number, the bonferroni correction for association tests results.
 <img src="Fig/1212.svg" width="80%">
 </a>
 </p>
+
+### epistasis viz
+</p>
+<p align="center">
+<a href="/Fig/epistasis.bmp">
+<img src="Fig/epistasis.bmp" width="80%">
+</a>
+</p>
+## Contact
+
+If you are interested in our model and method, and found any questions and comments feel free to contact [me](czheluo@gmail.com).
