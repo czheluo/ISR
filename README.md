@@ -98,7 +98,7 @@ mdl = number, 1 for linear model and 2 or 3 for nolinear model ; input('Using Mo
 8. chr1_4680899	1	4680899	3.587 	6.2E-02	-0.1385 	0.0731 	0.0069 
 </div></font> </span>
 
-> <span style="font-family: Times New Roman; font-size:1em;"><font size="4"> <div align="justify"> The eight columns are: SNP ids, chromosome, base-pair positions on the chromosome, F value and p-value for F value, beta estimates, standard errors for beta, estimates each marker PVE. And ISR.opt.outresult.txt  only contain the significant marker after Bonferroni correction in 5% default.</div></font> </span>
+> <span style="font-family: Times New Roman; font-size:1em;"><font size="4"> <div align="justify"> The eight columns are: SNP ids, chromosome, base-pair positions on the chromosome, F value and p-value for F value, beta estimates, standard errors for beta, estimates each marker PVE. And ISR.opt.outresult.txt  only contain the significant marker after Bonferroni correction at 5% default.</div></font> </span>
 
 ## [CFW genome-wide association study](https://www.nature.com/articles/ng.3609)
 
