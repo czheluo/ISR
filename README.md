@@ -55,7 +55,7 @@
 </div></font> </span>
 
 # Running ISR 
-> <span style="font-family: Times New Roman; font-size:1em;"><font size="4"> <div align="justify"> Compile in linux enviroment. make sure you add alias in path like  "alias matlab='/mnt/d/linux/MATLAB2016b/bin/matlab -nodesktop -nosplash -singleCompThread -logfile `date +%Y_%m_%d-%H_%M_%S`.log -r'" before Running. A Small GWAS Example Dataset Running as following: </div></font> </span>
+> Compile in linux enviroment. make sure you add alias in path like  "alias matlab='/mnt/d/linux/MATLAB2016b/bin/matlab -nodesktop -nosplash -singleCompThread -logfile `date +%Y_%m_%d-%H_%M_%S`.log -r'" before Running. A Small GWAS Example Dataset Running as following:
 ```matlab
 %% not add covariates 
 $ matlab "ISR_linux('phefile','../data/pop.fam','genofile','../data/pop.traw','sample',87,'nSNP',28228,'ntrait',1,'ncov',5),exit;"
