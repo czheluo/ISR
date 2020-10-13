@@ -1,4 +1,4 @@
-### ISR-MLLM For GWAS scan and epistasis scan（Mult-Loci Nonlinear/Linear Model Based on Iterative screen regression）
+### ISR For GWAS scan and epistasis scan（Mult-Loci Nonlinear/Linear Model Based on Iterative screen regression）
 
 <div align="center"><a href=""><img src="Fig/ISR.png" width="80%" alt="pca"></a></div>
 
