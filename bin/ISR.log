@@ -1,5 +1,0 @@
-diary('ISR.log','1'); % notes the command window diary
-{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('diary')" style="font-weight:bold">diary</a>
-Too many input arguments.
-} 
-diary(fullfile('isr',1,'.log')); % notes the command window diary
