@@ -6,6 +6,7 @@ function []=ISR_linux(varargin)
     %seting the env path 
     % alias matlab='/mnt/d/linux/MATLAB2016b/bin/matlab -nodesktop -nosplash -singleCompThread -logfile `date +%Y_%m_%d-%H_%M_%S`.log -r'
     addpath([pwd,'/src/']);
+    matfile=ft_getopt(varargin, 'matfile', []);
     phefile = ft_getopt(varargin, 'phefile', 'phe.fam');
     genofile = ft_getopt(varargin, 'genofile', 'pop.traw');
     outfile = ft_getopt(varargin, 'outfile', 'pop.traw.mat');
@@ -21,6 +22,7 @@ function []=ISR_linux(varargin)
     IM = ft_getopt(varargin, 'IM', 1);
     sgv = ft_getopt(varargin, 'sgv', 0.05); % default bonferroni correction
     mdl = ft_getopt(varargin, 'model',1); 
+    %matfile = string, the matlab data format if you already prepare you data  
     %phefile = string, can be any of file format split with "\t"(default = 'phe.fam')
     %genofile = string, .traw file format from plink (default = 'pop.traw')
     %outfile = string, save covert genotypes file name with any name you defined and save matlab format (default = 'pop.traw.mat')
@@ -54,14 +56,19 @@ function []=ISR_linux(varargin)
     if ~isempty(vcf)
         system(['plink ',' --vcf ',vcf,' --recode A-transpose --out pop']);
         traw2mat(phefile,genofile,outfile,sample,nSNP,ntrait,IM);
+	load(outfile);
     elseif ~isempty(bed)
         system(['plink ',' --bfile ',bed,' --recode A-transpose --out pop ']);
         traw2mat(phefile,genofile,outfile,sample,nSNP,ntrait,IM);
+	load(outfile);
+    elseif ~isempty(matfile)
+        load(matfile)
     else
         traw2mat(phefile,genofile,outfile,sample,nSNP,ntrait,IM);
+        load(outfile);
     end
     %traw2mat('../../pop.fam','../../poptraw.traw','popnew.mat',175,407045,3)
-    load(outfile);
+    
     Y=y;
     [~,p1]=size(Y);
     if p1==1
@@ -71,8 +78,8 @@ function []=ISR_linux(varargin)
         diary('ISR.log'); % notes the command window diary
         impute=2;yname=2;
         alfa=0.001;
-        glm=3;%the number of running 
-        ept0=5;%initially random chosed the number of multi-locus (probable result)
+        glm=3;%the number of running default 3 
+        ept0=10;%initially random chosed the number of multi-locus (probable result) default 5
         gr=2;%export the result of significant association SNP genotype (with gr=1)
         nchr=chr;%the number of Chromosome
         sgt=sgv;%  bonferroni correction
@@ -181,4 +188,3 @@ function []=ISR_linux(varargin)
         end
     end
 end
-   
