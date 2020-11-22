@@ -4,6 +4,7 @@ function []=ISR(varargin)
     % contact: czheluo@gmail.com             %  
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     addpath([pwd,'/src/']);
+    matfile=ft_getopt(varargin, 'matfile', []);
     phefile = ft_getopt(varargin, 'phefile', 'phe.fam');
     genofile = ft_getopt(varargin, 'genofile', 'pop.traw');
     outfile = ft_getopt(varargin, 'outfile', 'pop.traw.mat');
@@ -49,9 +50,15 @@ function []=ISR(varargin)
     %end
     %maxNumCompThreads=1;
     % write a shell script for ISR getopt....
-    traw2mat(phefile,genofile,outfile,sample,nSNP,ntrait,IM);
+    if ~isempty(matfile)
+        load(matfile)
+    else
+        traw2mat(phefile,genofile,outfile,sample,nSNP,ntrait,IM);
+        load(outfile);
+    end
+    %traw2mat(phefile,genofile,outfile,sample,nSNP,ntrait,IM);
     %traw2mat('../../pop.fam','../../poptraw.traw','popnew.mat',175,407045,3)
-    load(outfile);
+    %load(outfile);
     Y=y;
     [~,p1]=size(Y);
     if p1==1
@@ -60,9 +67,9 @@ function []=ISR(varargin)
         warning('off','all')
         diary('ISR.log'); % notes the command window diary
         impute=2;yname=2;
-        alfa=0.001;
+        alfa=0.05;%default 0.001
         glm=3;%the number of running 
-        ept0=5;%initially random chosed the number of multi-locus (probable result)
+        ept0=10;%initially random chosed the number of multi-locus (probable result)default 5
         gr=2;%export the result of significant association SNP genotype (with gr=1)
         nchr=chr;%the number of Chromosome
         sgt=sgv;%  bonferroni correction
@@ -171,4 +178,3 @@ function []=ISR(varargin)
         end
     end
 end
-   
