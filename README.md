@@ -40,6 +40,7 @@
 ><span style="font-family: Times New Roman; font-size:1em;"><font size="4"> <div align="justify"> ISR requires four input files containing genotypes, phenotypes,and covariates (optionally). Genotype and phenotype files can be in multiple formats, which the PLINK binary [traw (recommended)](https://www.cog-genomics.org/plink/1.9/formats#traw), [bed](https://www.cog-genomics.org/plink/1.9/formats#bed),  and [vcf](https://samtools.github.io/hts-specs/VCFv4.2.pdf) formats. which bed and vcf formats only can run in linux, and using [PLINK](https://www.cog-genomics.org/plink/2.0/) software recode to .traw format that codes genotypes using 0/1/2.</div></font> </span>
 
 ```matlab
+# or can use the R.matlab R packages output the mat format 
 > traw2mat('pop.fam','pop.traw','pop.mat',2279,355551,1,1)
 ```
 
