@@ -5,12 +5,7 @@
 #### Compared result (GWAS scan and epistasis scan) power and estimated PVE 
 <div align="center"><a href=""><img src="Fig/HUMANPOWER.png" width="80%" alt="pca"></a></div>
 
-</p>
-<p align="center">
-<a href="/Fig/3.2.png">
-<img src="Fig/3.2.png" width="80%">
-</a>
-</p>
+
 
 #### Compared result For genomic selection model 
 
