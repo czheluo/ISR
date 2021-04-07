@@ -1,4 +1,4 @@
-% GENOMEWIDEPLOT(CHR,POS,SCORE) shows the genome-wide scan (the "Manhattan
+% GENOMEWIDEPLOT(CHR,POS,SCORE) shows the genome-wide scan the "Manhattan
 % plot". Inputs CHR and POS specify the chromosome
 % numbers and chromosomal positions of the markers. The SNPs are assumed to
 % be ordered by chromosome number, then by position along the chromosome.
