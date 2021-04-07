@@ -1,5 +1,5 @@
 % GENOMEWIDEPLOT(CHR,POS,SCORE) shows the genome-wide scan (the "Manhattan
-% plot" in the WTCCC paper). Inputs CHR and POS specify the chromosome
+% plot". Inputs CHR and POS specify the chromosome
 % numbers and chromosomal positions of the markers. The SNPs are assumed to
 % be ordered by chromosome number, then by position along the chromosome.
 % SCORE is some measure of significance for all the markers, such as Bayes
