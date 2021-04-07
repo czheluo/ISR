@@ -128,6 +128,11 @@ mdl = number, 1 for linear model and 2 or 3 for nolinear model ; input('Using Mo
 <img src="Fig/qq.pca.bmp" width="60%">
 </a>
 </p>
+<p align="center">
+<a href="/scripts/plots/AI.svgp">
+<img src="/scripts/plots/AI.svg" width="60%">
+</a>
+</p>
 
 ### association region plot
 
