@@ -129,8 +129,8 @@ mdl = number, 1 for linear model and 2 or 3 for nolinear model ; input('Using Mo
 </a>
 </p>
 <p align="center">
-<a href="/scripts/plots/AI.svgp">
-<img src="/scripts/plots/AL.png" width="60%">
+<a href="/scripts/plots/ai.jpg">
+<img src="/scripts/plots/ai.jpg" width="60%">
 </a>
 </p>
 
