@@ -85,7 +85,7 @@ mdl = number, 1 for linear model and 2 or 3 for nolinear model ; input('Using Mo
 > <span style="font-family: Times New Roman; font-size:1em;"><font size="4"> <div align="justify"> The ISR.outresult.txt contains the results. An example file with a few SNPs is shown below: </div></font> </span>
 
 <span style="font-family: Times New Roman; font-size:1em;"><font size="4"> <div align="justify">
-1. SNP	Chromosome	Position	Ft	P_F	Beta	SEbeta	R2
+1. SNP	Chromosome	Position	Ft	P_F	Beta	SEbeta	R2 Z-score(Beta/SEbeta)
 2. chr1_3913855	1	3913855	0.046 	8.3E-01	0.0111 	0.0517 	0.0001 
 3. chr1_3913895	1	3913895	1.737 	1.9E-01	0.1237 	0.0939 	0.0034 
 4. chr1_4680660	1	4680660	0.161 	6.9E-01	-0.0324 	0.0807 	0.0003 
