@@ -136,19 +136,13 @@ mdl = number, 1 for linear model and 2 or 3 for nolinear model ; input('Using Mo
 
 ### association region plot
 
-</p>
+
 <p align="center">
 <a href="/Fig/locusZOOM.png">
 <img src="Fig/locusZOOM.png" width="80%">
 </a>
 </p>
 
-</p>
-<p align="center">
-<a href="/Fig/1212.svg">
-<img src="Fig/1212.svg" width="80%">
-</a>
-</p></p>
 <p align="center">
 <a href="/Fig/1212.svg">
 <img src="Fig/1212.svg" width="80%">
