@@ -157,6 +157,8 @@ mdl = number, 1 for linear model and 2 or 3 for nolinear model ; input('Using Mo
 </a>
 </p>
 
+### ISR For PheWAS
+coming soon...
 
 ## Citation
 Meng Luo and Shiliang Gu (2020). [A new approach of dissecting genetic effects for complex traits](https://www.biorxiv.org/content/10.1101/2020.10.16.336180v1). bioRxiv.
