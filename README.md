@@ -162,6 +162,7 @@ coming soon...
 
 ## Citation
 Meng Luo and Shiliang Gu (2020). [A new approach of dissecting genetic effects for complex traits](https://www.biorxiv.org/content/10.1101/2020.10.16.336180v1). bioRxiv.
+
 [CHINESE THESIS](https://kns.cnki.net/kcms2/article/abstract?v=3uoqIhG8C475KOm_zrgu4lQARvep2SAkWfZcByc-RON98J6vxPv10YqHXlu3Iigb9zzWCQR9DofLhJTJh1eBYk83cFo_o39M&uniplatform=NZKPT&src=copy)
 ## Contact
 
